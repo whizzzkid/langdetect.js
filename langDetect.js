@@ -4225,7 +4225,7 @@ hljs.registerLanguage('apache', function(hljs) {
   };
 });
 
-hljs.registerLanguage('xz', function(hljs) {
+hljs.registerLanguage('python', function(hljs) {
   var PROMPT = {
     className: 'prompt',  begin: /^(>>>|\.\.\.) /
   }
@@ -6024,7 +6024,7 @@ hljs.registerLanguage('erlang-repl', function(hljs) {
 var fileregex = new RegExp(/\/[^\/]*$/);
 var filehandle =
     process.argv[1].replace( fileregex, '/' + process.argv[2]);
-console.log('Processing File: ' + filehandle);
+console.log('Processing File: ' + process.argv[2]);
 
 /**
  * Reaging file
@@ -6042,5 +6042,6 @@ fs.readFile(filehandle, "utf-8", function read(err, data) {
  * Processing code
  */
 function processCode() {
-  console.log(hljs.highlightAuto(code).language);
+  console.log('I think the language is: "' +hljs.highlightAuto(code).language + '".');
+  console.log("");
 }
