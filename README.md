@@ -19,8 +19,11 @@ running ./test.sh will generate test results for all language samples in the tes
 
 you can use all the settings mentioned by Ivan on github (upto v7.5) but again you will need to edit langdetect.js to output the result the way you want. And ofcourse rebuild the minified version of the script.
 
-
 ## Meta
 
 - Version: 1.0
 - URL:     http://nishantarora.in/
+
+# Disclaimer
+
+This script can only provide you with a crude mechanism to profile source code snippets. But this is the fastest and closest match to language detection I have. Please go through this conversation with Ivan before proceeding https://github.com/isagalaev/highlight.js/issues/334
